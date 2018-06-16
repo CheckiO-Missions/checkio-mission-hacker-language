@@ -42,11 +42,11 @@ message.delete(1)''',
     ],
     "3. Third": [
         prepare_test(middle_code='''message = HackerLanguage()
-message.write('Hi, man')
+message.write('Hi man')
 message.delete(3)
 message.write('dude!')''',
                      test="message.send()",
-                     answer="1001000110100110110010000001100100111010111001001100101!")
+                     answer="1001000110100110000001100100111010111001001100101!")
     ],
     "4. Fourth": [
         prepare_test(middle_code='''message = HackerLanguage()
